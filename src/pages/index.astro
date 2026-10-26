@@ -1,32 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import PantallaLogin from '../components/PantallaLogin.astro';
-import PantallaCategorias from '../components/PantallaCategorias.astro';
-import PantallaMujer from '../components/PantallaMujer.astro';
 ---
 
-<Layout>
-    <PantallaLogin />
-    <PantallaCategorias />
-    <PantallaMujer />
-</Layout>
-
-<script>
-    document.getElementById("formLogin")!.addEventListener("submit", function(e){
-        e.preventDefault();
-        cambiarPantalla("pantalla-categorias");
-    });
-
-    document.getElementById("googleBtn")!.addEventListener("click", function(){
-        cambiarPantalla("pantalla-categorias");
-    });
-
-    document.getElementById("btnMujer")!.addEventListener("click", function(){
-        cambiarPantalla("pantalla-mujer");
-    });
-
-    function cambiarPantalla(id: string){
-        document.querySelectorAll(".pantalla").forEach(p => p.classList.remove("activa"));
-        document.getElementById(id)!.classList.add("activa");
-    }
-</script>
+<Layout />
