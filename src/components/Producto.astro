@@ -1,0 +1,9 @@
+---
+const { nombre, precio } = Astro.props;
+---
+
+<div class="producto">
+    <img src="/articulo.png" alt={nombre}>
+    <h3>{nombre}</h3>
+    <p>{precio}</p>
+</div>

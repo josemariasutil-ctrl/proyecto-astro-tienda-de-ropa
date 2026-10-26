@@ -1,0 +1,8 @@
+---
+const { clase, id, imagen, alt, texto } = Astro.props;
+---
+
+<div class={clase} id={id}>
+    <img src={imagen} alt={alt}>
+    <div class="texto">{texto}</div>
+</div>
